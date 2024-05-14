@@ -7,8 +7,8 @@ interface DataProps {
 // この関数をコンポーネント化してる
 const GetExample: FC = () => {
   const [data, setData] = useState<DataProps | null>(null);
-  const url = 'http://localhost:8080';
-
+  // const url = 'http://localhost:8080';
+  const url = 'https://deepen-back.onrender.com/'
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -27,7 +27,7 @@ const GetExample: FC = () => {
     <div>
       <div>
         <h3>ここにメッセージがくるよ</h3>
-        {data ? (<div>{data.data}</div>) : (<div>サーバー起動中</div>)}
+        {data ? (<div>{data.data}</div>) : (<div>サーバーが起動したらHello worldが表示されます</div>)}
       </div>
     </div>
   );

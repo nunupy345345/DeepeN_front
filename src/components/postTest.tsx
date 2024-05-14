@@ -3,7 +3,7 @@ import axios from "axios";
 
 const PostExample: FC = () => {
   const [data,setData] = useState<any>(null);
-  const url = 'http://localhost:8080/test'
+  const url = 'https://deepen-back.onrender.com/test'
 
   const testSenddata = {
     word: '昨日食べた林檎とappleは美味しかった!'
