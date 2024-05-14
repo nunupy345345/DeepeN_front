@@ -6,7 +6,7 @@ const PostExample: FC = () => {
   const url = 'http://localhost:8080/test'
 
   const testSenddata = {
-    word: '昨日食べた林檎とappleは美味しかった'
+    word: '昨日食べた林檎とappleは美味しかった!'
   };
 
   const fetchData = async () => {
