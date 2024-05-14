@@ -27,7 +27,7 @@ const GetExample: FC = () => {
     <div>
       <div>
         <h3>ここにメッセージがくるよ</h3>
-        {data ? (<div>{data.data}</div>) : (<div>コンソールを見てね</div>)}
+        {data ? (<div>{data.data}</div>) : (<div>サーバー起動中</div>)}
       </div>
     </div>
   );

@@ -8,25 +8,25 @@ const PostExample: FC = () => {
   const testSenddata = {
     word: '昨日食べた林檎とappleは美味しかった'
   };
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        axios.post(url,testSenddata).then(response => {
-          console.log(response)
-          setData(response.data);
-        })
-      } catch (error) {
-        console.error(error);
-      };
+
+  const fetchData = async () => {
+    try {
+      axios.post(url,testSenddata).then(response => {
+        console.log(response)
+        setData(response.data);
+      })
+    } catch (error) {
+      console.error(error);
     };
-    fetchData();
-  },[url]);
+  };
+
   return (
     <div>
       <div>
         <h3>ここにTestメッセージがくるよ</h3>
-        {data ? (<div><pre>{JSON.stringify(data, null, 2)}</pre> {/* 受信データを整形して表示 */}</div>) : (<div>データがありません！コンソール見てね</div>)}
+        {data ? (<div><pre>{JSON.stringify(data, null, 2)}</pre> {/* 受信データを整形して表示 */}</div>) : (<div>サーバー起動中を確認してボタンを押してね</div>)}
       </div>
+      <button onClick={fetchData}>POSTリクエストを送信</button>
     </div>
   );
 };
