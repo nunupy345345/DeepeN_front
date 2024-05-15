@@ -3,7 +3,8 @@ import axios from "axios";
 
 const PostExample: FC = () => {
   const [data,setData] = useState<any>(null);
-  const url = 'https://deepen-back.onrender.com/test'
+    // const url = 'http://localhost:8080'; // MEMO: localで立てるときはこのURLを使う
+  const url = `${import.meta.env.VITE_REACT_APP_BACK_URL}/test`;
 
   const testSenddata = {
     word: '昨日食べた林檎とappleは美味しかった!'
