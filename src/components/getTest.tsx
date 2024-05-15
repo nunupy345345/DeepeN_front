@@ -7,8 +7,8 @@ interface DataProps {
 // この関数をコンポーネント化してる
 const GetExample: FC = () => {
   const [data, setData] = useState<DataProps | null>(null);
-  // const url = 'http://localhost:8080';
-  const url = 'https://deepen-back.onrender.com/'
+  // const url = 'http://localhost:8080'; // MEMO: localで立てるときはこのURLを使う
+  const url = import.meta.env.VITE_REACT_APP_BACK_URL;
   useEffect(() => {
     const fetchData = async () => {
       try {
