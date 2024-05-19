@@ -7,7 +7,7 @@ const PostExample: FC = () => {
   const url = `${import.meta.env.VITE_REACT_APP_BACK_URL}/test`;
 
   const testSenddata = {
-    word: '昨日食べた林檎とappleは美味しかった!'
+    word: '昨日食べた苺とstrewberryは美味しかった!'
   };
 
   const fetchData = async () => {
