@@ -1,3 +1,19 @@
 .title {
-  color: brown;
+  display: flex;
+  background-color: dodgerblue;
+  grid-gap: 5rem;
+}
+
+
+.option {
+  display: flex;
+  grid-gap: 2rem;
+}
+
+.option1 {
+  background-color: aqua;
+}
+
+.option2 {
+  background-color: aqua;
 }
