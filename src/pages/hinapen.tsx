@@ -15,12 +15,14 @@ export const Hinapen = () => {
         <h1>ひなぺんの部屋</h1>
         <h1> テキストの翻訳 </h1>
       </div>
-      <div className="option">
-        <h2 className="option1">雛ペンに会いに行く！</h2>
-        <h2 className="option2">図鑑を見る</h2>
+      <div className="select">
+        <h2 className="option">雛ペンに会いに行く！</h2>
+        <h2 className="option">図鑑を見る</h2>
       </div>
-      <img src={hinapen} className="" alt="" />
-
+      <div className="disc_img">
+        <p className="discription">学んだペン語の知識を元に雛ペンとお話ししてみよう！<br/>君の声がけ次第で雛ペンはペンは様々な姿に変身するよ！</p>
+        <img src={hinapen} className="image" />
+      </div>
     </div>
   );
 };

@@ -5,15 +5,22 @@
 }
 
 
-.option {
+.select {
   display: flex;
   grid-gap: 2rem;
 }
 
-.option1 {
+.option {
   background-color: aqua;
 }
 
-.option2 {
-  background-color: aqua;
+.disc_img {
+  display: flex;
+}
+
+
+.discription {
+  font-size: 50px;
+  background-color: lightcyan;
+  margin: 20px;
 }
