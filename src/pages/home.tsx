@@ -24,28 +24,31 @@ export const Home = () => {
 	    </header>
 
       <section id="button">
-          <a href="" className="btn_01">テキストの翻訳</a>
-          <a href="" className="btn_02">雛ペンのお部屋</a>
+          <a href="" className="btn">テキストの翻訳</a>
+          <a href="" className="btn">雛ペンのお部屋</a>
       </section>
 
       <section id="table">
-		  <table >
+		      <table border="1">
             <tr>
               <th><a href="" className="btn_01">日本語</a></th><th><a href="" className="btn_02">ぺ　ン　ンーーー</a></th>
             </tr>
             <tr>
-                <td></td><td></td>
+                <td>入力してね</td><td></td>
             </tr>
           </table>
 	    </section>
     
-      <section id="吹き出し">
-		  <div className='arrow_box'>
-            ペンギンは長生き！<br/>
-            種にもよるけど15～20年生きるよ！<br/>
-            （ペン語表記でコピペできるように）
-      </div>
-	    </section>
+    <div class="balloon5">
+    <div class="faceicon">
+      <img src="public/pen2.png" alt="Dr.penの写真"></img>
+    </div>
+    <div class="chatting">
+    <div class="says">
+      <p>ペンギンは長生き！<br/>種にもよるけど15～20年生きるよ！！</p>
+    </div>
+    </div>
+    </div>
     
     <section id="dr.pen">
         
