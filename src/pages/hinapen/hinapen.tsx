@@ -1,6 +1,6 @@
 import {NavLink} from "react-router-dom";
 import './hinapen.css';
-import hinapen from '../../public/hinapen.jpg'
+import hinapen from '../../../public/hinapen.jpg'
 
 export const Hinapen = () => {
   const handleClick1 = () => {
@@ -16,8 +16,8 @@ export const Hinapen = () => {
         <h1> テキストの翻訳 </h1>
       </div>
       <div className="select">
-        <h2 className="option">雛ペンに会いに行く！</h2>
-        <h2 className="option">図鑑を見る</h2>
+        <NavLink to="/talk" className="option">雛ペンに会いに行く！</NavLink>
+        <NavLink to="/zukan" className="option">図鑑を見る</NavLink>
       </div>
       <div className="disc_img">
         <p className="discription">学んだペン語の知識を元に雛ペンとお話ししてみよう！<br/>君の声がけ次第で雛ペンはペンは様々な姿に変身するよ！</p>

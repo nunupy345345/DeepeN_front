@@ -1,16 +1,14 @@
 import {NavLink} from "react-router-dom";
-import './talk.css';
+import './zukan.css';
 
 
 
-export const Talk = () => {
+export const Zukan = () => {
   return (
     <div>
-      <h1>トーク</h1>
+      <h1>図鑑</h1>
       <NavLink to="/hinapen">雛ペンのお部屋へ戻る</NavLink>
-      {/* <button onClick={handleClick2}></button> */}
     </div>
   );
 
 };
-

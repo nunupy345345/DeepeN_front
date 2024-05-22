@@ -11,6 +11,9 @@
 }
 
 .option {
+  color: black;
+  font-size: 50px;
+  margin: 20px;
   background-color: aqua;
 }
 
@@ -20,7 +23,7 @@
 
 
 .discription {
-  font-size: 50px;
+  font-size: 45px;
   background-color: lightcyan;
   margin: 20px;
 }
