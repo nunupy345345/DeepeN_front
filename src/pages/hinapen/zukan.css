@@ -1,0 +1,12 @@
+
+.zukan {
+    background-color: antiquewhite;
+    margin: 20px;
+    text-align: center;
+}
+
+.Zukan {
+    background-color: lightgray;
+    display: inline-block;
+    padding: 2%;
+}
