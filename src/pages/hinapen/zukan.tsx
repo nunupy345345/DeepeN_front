@@ -1,7 +1,6 @@
 import {NavLink} from "react-router-dom";
 import './zukan.css';
-// from '././public/image' import 'pen.png'
-
+// import dict from '../../../public/image/images.tsx'
 
 
 export const Zukan = () => {
@@ -9,7 +8,8 @@ export const Zukan = () => {
     <div>
       <h1>図鑑</h1>
       <NavLink to="/hinapen">雛ペンのお部屋へ戻る</NavLink>
-      {/* <img src="pen.png" alt="" /> */}
+      {/* <img src={dict["pen"]} className="image" /> */}
+      
     </div>
   );
 
