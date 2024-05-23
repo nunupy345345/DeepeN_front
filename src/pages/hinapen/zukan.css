@@ -10,3 +10,26 @@
     display: inline-block;
     padding: 2%;
 }
+
+
+/* 全画像をまとめてサイズ等指定した方が良い */
+.pen {
+    object-fit: cover;
+}
+/* 
+.hideripen {
+    object-fit: cover;
+}
+
+.koalapen {
+    object-fit: cover;
+}
+
+.peso {
+    object-fit: cover;
+} */
+
+.picture {
+    flex-direction: column;
+    flex-wrap: wrap;
+}

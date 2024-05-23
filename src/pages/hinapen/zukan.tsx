@@ -18,10 +18,10 @@ export const Zukan = () => {
       <div className="zukan">
         <h1 className="Zukan">図鑑</h1>
         <div className="picture">
-          <img src={pen}/>
-          <img src={hideripen}/>
-          <img src={koalapen}/>
-          <img src={peso}/>
+          <img src={pen} alt="pen"/>
+          <img src={hideripen} alt="hideriPen"/>
+          <img src={koalapen} alt="koalaPen"/>
+          <img src={peso} alt="peso"/>
         </div>
 
       </div>
