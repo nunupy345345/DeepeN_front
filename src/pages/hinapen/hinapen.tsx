@@ -1,6 +1,6 @@
 import {NavLink} from "react-router-dom";
 import './hinapen.css';
-import hinapen仮 from '../../../public/image/hinapen仮.jpg'
+import hinapen仮 from '../../../public/images/hinapen仮.jpg'
 
 export const Hinapen = () => {
   const handleClick1 = () => {

@@ -1,35 +1,38 @@
 
 .zukan {
-    background-color: antiquewhite;
+    background-color: lavenderblush;
     margin: 20px;
     text-align: center;
 }
 
-.Zukan {
+.Ztitle {
     background-color: lightgray;
     display: inline-block;
-    padding: 2%;
+    width: 250px;
+    padding: 10px;
 }
 
+.pictures {
+    /* flex-direction: row-reverse; */
+    flex-wrap: wrap; /*  折り返し？ */
+    text-align: initial;
 
-/* 全画像をまとめてサイズ等指定した方が良い */
-.pen {
-    object-fit: cover;
 }
-/* 
-.hideripen {
-    object-fit: cover;
-}
-
-.koalapen {
-    object-fit: cover;
-}
-
-.peso {
-    object-fit: cover;
-} */
 
 .picture {
-    flex-direction: column;
-    flex-wrap: wrap;
+    object-fit: cover;
+    width: 180px;
+    height: 180px;
+    background-color: white;
 }
+
+.set {
+    display:inline-block;
+    margin: 30px;
+}
+
+.name {
+    text-align: center;
+    margin: 0px;
+}
+
