@@ -1,0 +1,11 @@
+.header1 {
+    color: black;
+}
+
+.header{
+    display: flex;
+    background-color: dodgerblue;
+    grid-gap: 5rem;
+    font-size: 330%;
+    color: black;
+  }

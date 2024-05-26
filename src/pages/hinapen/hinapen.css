@@ -1,16 +1,10 @@
-.title {
-  display: flex;
-  background-color: dodgerblue;
-  grid-gap: 5rem;
-}
-
-
-.select {
+.sub_header {
   display: flex;
   grid-gap: 2rem;
+  margin: 10px;
 }
 
-.option {
+.sub_header1 {
   color: black;
   font-size: 50px;
   margin: 20px;
@@ -22,8 +16,52 @@
 }
 
 
+
 .discription {
-  font-size: 45px;
+  position: relative;
+  display: inline-block;
   background-color: lightcyan;
-  margin: 20px;
+  margin: 1.5em 15px 1.5em 0;
+  padding: 7px 10px;
+  min-width: 710px;
+  color: #555;
+  font-size: 45px;
+  border: solid 3px #555;
+  box-sizing: border-box;
+  border-radius: 50px;
+}
+
+.discription::before {
+  content: "";
+  position: absolute;
+  top: 100px;
+  right: -24px;
+  margin-top: -12px;
+  border: 12px solid transparent;
+  border-left: 12px solid lightcyan;
+  z-index: 2;
+}
+
+.discription:after {
+  content: "";
+  position: absolute;
+  top: 100px;
+  right: -30px;
+  margin-top: -14px;
+  border: 14px solid transparent;
+  border-left: 14px solid #555;
+  z-index: 1;
+}
+
+.discription p {
+  margin: 0px;
+  padding: 0;
+}
+
+
+
+.image {
+  height: 50%;
+  width: 40%;
+  border-radius: 50%;
 }
