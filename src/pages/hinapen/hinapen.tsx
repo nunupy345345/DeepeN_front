@@ -5,7 +5,7 @@ import { Link } from "../../components/hinapenComponents/headerComponents/navlin
 
 export const Hinapen = () => {
   return (
-    <>
+    <div className='all'>
       <Header headerColor2='selectingHeader'/>
       <div className="sub_header">
         <Link link="/talk" text="雛ペンに会いにいく！" linkName="sub_header1"/>
@@ -15,6 +15,6 @@ export const Hinapen = () => {
         <p className="discription">学んだペン語の知識を元に雛ペンとお話ししてみよう！<br/>君の声がけ次第で雛ペンは様々な姿に変身するよ！</p>
         <img src={hinapen仮} className="image" />
       </div>
-    </>
+    </div>
   );
 };
