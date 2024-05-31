@@ -1,16 +1,17 @@
-
 .zukan {
     background-color: lavenderblush;
-    margin: 20px;
+    margin: 4.5vw;
     text-align: center;
 }
 
 .Ztitle {
     background-color: lightgray;
     display: inline-block;
-    width: 250px;
-    padding: 10px;
+    width:20vw;
+    padding: 2vw;
+    font-size: 5cqmax;
 }
+
 
 .pictures {
     /* flex-direction: row-reverse; */
@@ -19,20 +20,25 @@
 
 }
 
-.picture {
-    object-fit: cover;
-    width: 180px;
-    height: 180px;
-    background-color: white;
-}
+
 
 .set {
     display:inline-block;
-    margin: 30px;
+    margin: 2vw;
 }
+
+
+.picture {
+    object-fit: cover;
+    width: 18vw;
+    height: 18vw;
+    background-color: white;
+}
+
 
 .name {
     text-align: center;
-    margin: 0px;
+    margin: 0;
+    font-size: 2.5cqmax;
 }
 

@@ -6,7 +6,8 @@ import { Header } from "../../components/hinapenComponents/headerComponents/head
 export const Zukan = () => {
   return (
     <div>
-      <Header/><div className="zukan">
+      <Header headerColor2="selectingHeader"/>
+      <div className="zukan">
         <h1 className="Ztitle">図鑑</h1>
         <ZukanContents/>
         {/* <DictPickup/> */}

@@ -6,7 +6,7 @@ import { Link } from "../../components/hinapenComponents/headerComponents/navlin
 export const Hinapen = () => {
   return (
     <>
-      <Header />
+      <Header headerColor2='selectingHeader'/>
       <div className="sub_header">
         <Link link="/talk" text="雛ペンに会いにいく！" linkName="sub_header1"/>
         <Link link="/zukan" text="図鑑を見る" linkName="sub_header1"/>
