@@ -33,6 +33,10 @@
     width: 18vw;
     height: 18vw;
     background-color: white;
+    &:active{
+        height: 40vw;
+        width: 40vw;
+    }
 }
 
 

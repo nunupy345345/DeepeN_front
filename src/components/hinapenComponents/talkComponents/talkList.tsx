@@ -1,3 +1,5 @@
+import './talkContent.css'
+
 import { useState } from "react";
 
 
@@ -14,35 +16,27 @@ export const talkList: readonly string[] = [
 //日本語かペン語か？
 
 
-var random: number = Math.floor(Math.random()*talkList.length);
 
-export const showPhrase=(Input:string)=>{
+const showPhrase=(Input:string)=>{
     if (Input != ""){
-        return talkList[random];
+        return <p className='outputBox'>{talkList[Math.floor(Math.random()*talkList.length)]}</p>
+    }
+    else {
+        return <p className='outputBox'/>
     }
 }
 
 
 
-export const A = () => {
-    const [count, setCount] = useState("");
-    const showPhrase=()=>{
-        setCount(talkList[random])
-    }
-    return <div>
-        {/* <input type="text" value={count} onChange={(e) => setCount(e.target.value)}></input> */}
-        <button onClick={showPhrase}>ボタン</button>
-        {count}
-    </div>
-};
 
-export const B = () => {
-    const [display, set1] = useState('');
-    const [text, setText] = useState('');
-    return <div>
-        <input type="text" value={text} onChange={(e) => setText(e.target.value)}/>
-        <button onClick={() => set1(text)}>話す</button>
-        {showPhrase(display)}
+
+export const Response = () => {
+    const [output, setOutput] = useState('');
+    const [input, setInput] = useState('');
+    return <div className="talkSpace">
+        <input className="inputBox" type="text" value={input} onChange={(e) => setInput(e.target.value)} />
+        <button className="button" onClick={() => setOutput(input)}>話す</button>
+        {showPhrase(output)}
     </div>
 }
 

@@ -11,6 +11,7 @@ export const Zukan = () => {
         <h1 className="Ztitle">図鑑</h1>
         <ZukanContents/>
         {/* <DictPickup/> */}
+        
       </div>
     </div>
   );

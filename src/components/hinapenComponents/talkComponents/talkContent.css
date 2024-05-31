@@ -1,14 +1,50 @@
-/* .inputarea {
-    width: 50vw;
-    height: 20vw;
-} */
-
-.talkpen {
-    height: 20vw;
-    width: 20vw;
+.talkSpace {
+    width: max-content;
+    display: flex;
 }
 
 .inputBox {
-    width: 40vw;
-    height: 30vw;
+    position: relative;
+    top: 5vw;
+    left: 5vw;
+    width: 35vw;
+    height: 25vw;
+    font-size: 5vw;
 }
+
+
+
+
+.button {
+    position: relative;
+    top: 26vw;
+    left: 5vw;
+    width: 7vw;
+    height: 4vw;
+    font-size: 1.5vw;
+}
+
+.outputBox {
+    position: relative;
+    /* top: 50vw; */
+    left: 10vw;
+    width: 35vw;
+    height: 25vw;
+    background-color: lightyellow;
+    font-size: 5cqmax;
+}
+
+
+.talkpen {
+    position: relative;
+    top: -2svw;
+    left: 40vw;
+    height: 20vw;
+    width: 20vw;
+    /* &:active{
+        height: 30vw;
+        width: 30vw;
+    } */
+    
+}
+
