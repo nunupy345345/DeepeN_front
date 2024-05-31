@@ -12,39 +12,36 @@ export const Home = () => {
     <div className="home">
       {/* <NavLink to="/instruction">説明</NavLink>
       <h1>ホーム</h1> */}
-      <header>
-		<a href=""><img src=""/></a>
-		<nav className="nav">
-			<ul className="menu-group">
-            <li className="menu-item"><a href="">DeepeN</a></li>
-			  <li className="menu-item"><a href="">テキストの翻訳</a></li>
-			  <li className="menu-item"><a href="">雛ペンのお部屋</a></li>
-			</ul>
-		  </nav>
-	    </header>
 
-      <section id="button">
-          <a href="" className="btn">テキストの翻訳</a>
-          <a href="" className="btn">雛ペンのお部屋</a>
-      </section>
+<header className="header">
+    <nav className="nav">
+      <ul className="menu-group">
+        <li className="menu-item"><a href="">DeepeN</a></li>
+        <li className="menu-item"><a href="">テキストの翻訳</a></li>
+        <li className="menu-item"><a href="">雛ペンのお部屋</a></li>
+      </ul>
+    </nav>
+</header>
 
       <section id="table">
 		      <table border="1">
             <tr>
               <th><a href="" className="btn_01">日本語</a></th><th><a href="" className="btn_02">ぺ　ン　ンーーー</a></th>
             </tr>
-            <tr>
-                <td>入力してね</td><td></td>
-            </tr>
           </table>
-	    </section>
-    
-    <div class="balloon5">
-    <div class="faceicon">
+      </section>
+
+      <div className="flex">
+        <input className="inputBox" type="text"/>
+        <input className="inputBox" type="text"/>
+      </div>
+      
+    <div className="balloon">
+    <div className="faceicon">
       <img src="public/pen2.png" alt="Dr.penの写真"></img>
     </div>
-    <div class="chatting">
-    <div class="says">
+    <div className="chatting">
+    <div className="says">
       <p>ペンギンは長生き！<br/>種にもよるけど15～20年生きるよ！！</p>
     </div>
     </div>
@@ -52,8 +49,11 @@ export const Home = () => {
     
     <section id="dr.pen">
         
+      </section>
+      
+    <section id="button">
+        <button onClick={handleClick1}>ひなぺんのお部屋</button>
     </section>
-    <button onClick={handleClick1}>ひなぺんの部屋へ飛ぶ</button>
     </div>
   );
 };
