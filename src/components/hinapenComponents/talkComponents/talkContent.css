@@ -12,9 +12,6 @@
     font-size: 5vw;
 }
 
-
-
-
 .button {
     position: relative;
     top: 26vw;
@@ -34,17 +31,10 @@
     font-size: 5cqmax;
 }
 
-
 .talkpen {
     position: relative;
     top: -2svw;
     left: 40vw;
     height: 20vw;
     width: 20vw;
-    /* &:active{
-        height: 30vw;
-        width: 30vw;
-    } */
-    
 }
-

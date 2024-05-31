@@ -17,7 +17,6 @@ export const Header = (props: HeaderColor) => {
                 <Link link="/hinapen" text="雛ペンのお部屋" linkName={headerColor2}/>
                 <Link link="/text" text="テキストの翻訳" linkName={headerColor3}/>
             </div>
-        </div>
-       
+        </div>  
     );
 };

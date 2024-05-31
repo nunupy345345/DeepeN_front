@@ -12,8 +12,6 @@ import { dict } from '../../../../public/images/images';
 //   }
 // }
 
-
-
 type DictPickerProps = {
   variable: string
   name: string
@@ -22,15 +20,12 @@ type DictPickerProps = {
 const DictPicker = (props: DictPickerProps) => {
   const { variable, name } = props
   return (
-    <>
-      <div className="set">
-        <img src={dict[variable]} alt={name} className="picture"/>
-        <h2 className="name">{name}</h2>
-      </div>
-    </>
+    <div className="set">
+      <img src={dict[variable]} alt={name} className="picture"/>
+      <h2 className="name">{name}</h2>
+    </div>
   )
 }
-
 
 export const ZukanContents = () => {
   return(
