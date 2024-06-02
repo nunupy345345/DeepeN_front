@@ -47,13 +47,14 @@ export const Response = (props: Language) => {
     const [isShown,setIsShown] = useState(false);
     const [input, setInput] = useState('');
     const [output, setOutput] = useState('');
-    const [beforeNum, setBeforeNUM] = useState(number);
+    const [beforeNum, setBeforeNUM] = useState(0);
     const onClick1 = () => {
         setOutput(input)
         setIsShown(true)
     };
     const onClick2 = () => {
         setBeforeNUM(number)
+        setIsShown(false)
     }
     // const onClick2 = (str : e) = {
     //     setInput(e)
@@ -61,7 +62,7 @@ export const Response = (props: Language) => {
     // }
     return (
         <div className="talkSpace">
-            <input className="inputBox" type="text" value={input} onChange={(e) => setInput(e.target.value)} onClick={() => setIsShown(false)} />
+            <input className="inputBox" type="text" value={input} onChange={(e) => setInput(e.target.value)} onClick={() => onClick2} />
             <button className="button" onClick={() => onClick1()}>話す</button>
             {showPhrase(output,beforeNum)};
         </div>
