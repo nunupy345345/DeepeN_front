@@ -1,0 +1,41 @@
+.talkSpace {
+    width: max-content;
+    display: flex;
+    height: 50vw;
+}
+
+.inputBox {
+    position: relative;
+    top: 5vw;
+    left: 5vw;
+    width: 35vw;
+    height: 25vw;
+    font-size: 5vw;
+}
+
+.button {
+    position: relative;
+    top: 26vw;
+    left: 5vw;
+    width: 7vw;
+    height: 4vw;
+    font-size: 1.5vw;
+}
+
+.outputBox {
+    position: relative;
+    /* top: 50vw; */
+    left: 10vw;
+    width: 35vw;
+    height: 25vw;
+    background-color: lightyellow;
+    font-size: 5cqmax;
+}
+
+.talkpen {
+    position: relative;
+    top: 31vw;
+    left: -30vw;
+    height: 18vw;
+    width: 18vw;
+}

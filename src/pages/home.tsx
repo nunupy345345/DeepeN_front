@@ -8,6 +8,7 @@ export const Home = () => {
   const handleClick1 = () => {
     window.location.href = "/hinapen";
   }
+  
   return (
     <div className="home">
       {/* <NavLink to="/instruction">説明</NavLink>

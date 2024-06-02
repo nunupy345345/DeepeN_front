@@ -1,0 +1,40 @@
+.zukan {
+    background-color: lavenderblush;
+    margin: 4.5vw;
+    text-align: center;
+}
+
+.Ztitle {
+    background-color: lightgray;
+    display: inline-block;
+    width:20vw;
+    padding: 2vw;
+    font-size: 5cqmax;
+}
+
+.pictures {
+    flex-wrap: wrap;
+    text-align: initial;
+}
+
+.set {
+    display:inline-block;
+    margin: 2vw;
+}
+
+.picture {
+    object-fit: cover;
+    width: 18vw;
+    height: 18vw;
+    background-color: white;
+    &:active{
+        height: 40vw;
+        width: 40vw;
+    }
+}
+
+.name {
+    text-align: center;
+    margin: 0;
+    font-size: 2.5cqmax;
+}

@@ -1,0 +1,19 @@
+.header{
+    display: flex;
+    background-color: dodgerblue;
+    grid-gap: 10vw;
+    width: max-content;
+    font-size: 4cqmax;
+    color: black;
+}
+
+.defaultHeader {
+    width: 30vw;
+    color: black;
+}
+
+.selectingHeader {
+    width: 30vw;
+    color: black;
+    font-size: 1.2em;
+}
