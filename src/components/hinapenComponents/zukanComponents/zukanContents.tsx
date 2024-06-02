@@ -30,16 +30,16 @@ const DictPicker = (props: DictPickerProps) => {
 export const ZukanContents = () => {
   return(
     <div className="pictures">
-      <DictPicker variable="k_pen" name="ペン"/>
-      <DictPicker variable="k_koalapen" name="コアラペン"/>
-      <DictPicker variable="k_hideripen" name="日照りーペン"/>
-      <DictPicker variable="k_peso" name="ペソ"/>
-      <DictPicker variable="k_bigpen" name="ビッグペン"/>
-      <DictPicker variable="k_emperorpen" name="皇帝ペンギン"/>
-      <DictPicker variable="k_penquestion" name="ペンギンの問題"/>
-      <DictPicker variable="k_sizukanarupen" name="静かなるペン"/>
-      <DictPicker variable="k_tokepen" name="溶けペン"/>
-      <DictPicker variable="k_usapen" name="うさペン"/>
+      <DictPicker variable="0" name="ペン"/>
+      <DictPicker variable="1" name="コアラペン"/>
+      <DictPicker variable="2" name="日照りーペン"/>
+      <DictPicker variable="3" name="ペソ"/>
+      <DictPicker variable="4" name="ビッグペン"/>
+      <DictPicker variable="5" name="皇帝ペンギン"/>
+      <DictPicker variable="6" name="ペンギンの問題"/>
+      <DictPicker variable="7" name="静かなるペン"/>
+      <DictPicker variable="8" name="溶けペン"/>
+      <DictPicker variable="9" name="うさペン"/>
     </div>
   )
 }

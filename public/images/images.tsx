@@ -10,15 +10,15 @@ import tokepen from './tokepen.png';
 import usapen from './usapen.png';
 
 export const dict: {[key: string]:string}={
-    k_pen: pen,
-    k_koalapen: koalapen,
-    k_hideripen: hideripen,
-    k_peso: peso,
-    k_bigpen: bigpen,
-    k_emperorpen: emperorpen,
-    k_penquestion: penquestion,
-    k_sizukanarupen: sizukanarupen,
-    k_tokepen: tokepen,
-    k_usapen: usapen,
+    0: pen,
+    1: koalapen,
+    2: hideripen,
+    3: peso,
+    4: bigpen,
+    5: emperorpen,
+    6: penquestion,
+    7: sizukanarupen,
+    8: tokepen,
+    9: usapen,
 }
 
