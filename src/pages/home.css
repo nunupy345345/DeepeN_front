@@ -1,3 +1,135 @@
+.header {
+  position: relative;
+  bottom: 15px;
+	margin: 0;
+  display: flex;
+  justify-content: space-between; /* ロゴとナビゲーションを左右に配置 */
+  align-items: center; /* 垂直方向の中央揃え */
+  width: 100%;
+	height: 100px;
+	background-color: #00B2FF;
+}
+.header p{
+  position: absolute;
+	color: #000000;
+	font-size: 1.5rem;
+	position: absolute;
+	left: 100px;
+}
+
+/* ナビゲーションのスタイル */
+.menu-item {
+	list-style: none;
+	display: inline-block;
+	padding: 20px;
+  margin: 10% 10vmax;
+  justify-content: space-around;
+  }
+.menu-item a{
+	color: #000000;
+	font-size: 20px;
+  }
+
 .menu-item{
-  color: blue;
+  color: rgb(0, 0, 0);
+}
+ul {
+  list-style: none;
+}
+
+
+table {
+  position: relative;
+  bottom:20px;
+  height: 5vw;
+  margin-top: 1%;
+  border: solid 2px rgb(4, 0, 255);
+  border-collapse:  collapse; /* セルの線を重ねる */
+}
+th {
+  position: relative;
+  width: 48.95vw;
+  height: 8vw;
+  font-size: 2vw;
+  border: solid 1px;  /* 枠線指定 */
+  /* padding: 10px;      余白指定  */
+  border: solid 2px rgb(4, 0, 255);
+}
+
+.flex{
+  display: flex;
+}
+.inputBox {
+  position: relative;
+  bottom:20px;
+  width: 48.7vw;
+  height: 25vw;
+  font-size: 2vw;
+  border: solid 2px rgb(4, 0, 255);
+}
+.fishbutton{
+  position:absolute;
+  bottom: 332px;
+  left: 545px;
+}
+
+.balloon {
+  width: 100%;
+  margin: 1.5em 0;
+  overflow: hidden;
+}
+.balloon .faceicon {
+  float: left;
+  margin-right: -90px;
+  width: 16%;
+}
+.balloon .faceicon img{
+  width: 100%;
+  height: auto;
+}
+.balloon .chatting {
+  width: 100%;
+}
+.says {
+  display: inline-block;
+  position: relative; 
+  top:25px;
+  margin: 5px 0 0 105px;
+  padding: 17px 13px;
+  border-radius: 12px;
+  background: #d7ebfe;
+  font-size: 2vw;
+  width: 80%;
+}
+.says:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 54px; 
+  left: -24px;
+  border: 12px solid transparent;
+  border-right: 12px solid #d7ebfe;
+}
+.says p {
+  margin: 0;
+  padding: 0;
+}
+
+
+button{
+    position: relative;
+    bottom: 20px;
+    left:538px; 
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #00B2FF;
+    border: solid 2px #00B2FF;
+    border-radius: 3px;
+    transition: .4s;
+}
+  
+button:hover {
+    background: #00B2FF;
+    color: white; 
 }

@@ -12,45 +12,50 @@ export const Home = () => {
     <div className="home">
       {/* <NavLink to="/instruction">説明</NavLink>
       <h1>ホーム</h1> */}
-      <header>
-		<a href=""><img src=""/></a>
-		<nav className="nav">
-			<ul className="menu-group">
-            <li className="menu-item"><a href="">DeepeN</a></li>
-			  <li className="menu-item"><a href="">テキストの翻訳</a></li>
-			  <li className="menu-item"><a href="">雛ペンのお部屋</a></li>
-			</ul>
-		  </nav>
-	    </header>
 
-      <section id="button">
-          <a href="" className="btn_01">テキストの翻訳</a>
-          <a href="" className="btn_02">雛ペンのお部屋</a>
-      </section>
+<header className="header">
+    <nav className="nav">
+      <ul className="menu-group">
+        <li className="menu-item"><a href="">DeepeN</a></li>
+        <li className="menu-item"><a href="">テキストの翻訳</a></li>
+        <li className="menu-item"><a href="">雛ペンのお部屋</a></li>
+      </ul>
+    </nav>
+</header>
 
       <section id="table">
-		  <table >
-            <tr>
-              <th><a href="" className="btn_01">日本語</a></th><th><a href="" className="btn_02">ぺ　ン　ンーーー</a></th>
-            </tr>
-            <tr>
-                <td></td><td></td>
-            </tr>
+		      <table border="1">
+          <tr>
+            <th>日本語</th><th>ぺ　ン　ンーーー</th>
+            {/* <th><a href="" className="btn_01">日本語</a></th><th><a href="" className="btn_02">ぺ　ン　ンーーー</a></th> */}
+          </tr>
           </table>
-	    </section>
-    
-      <section id="吹き出し">
-		  <div className='arrow_box'>
-            ペンギンは長生き！<br/>
-            種にもよるけど15～20年生きるよ！<br/>
-            （ペン語表記でコピペできるように）
+      </section>
+
+      <div className="flex">
+        <input className="inputBox" type="text"/>
+        <input className="inputBox" type="text"/>
       </div>
-	    </section>
-    
-    <section id="dr.pen">
-        
+      
+      <div className="fishbutton">
+      <p><input type="image" src="public/Unionfish.png" alt="変換する"/></p>
+      <p><input type="image" src="public/Unionfishbone.png" alt="変換する" /></p>
+      </div>
+      
+    <div className="balloon">
+    <div className="faceicon">
+      <img src="public/pen2.png" alt="Dr.penの写真"></img>
+    </div>
+    <div className="chatting">
+    <div className="says">
+      <p>ペンギンは長生き！<br/>種にもよるけど15～20年生きるよ！！</p>
+    </div>
+    </div>
+    </div>
+      
+    <section id="button">
+        <button onClick={handleClick1}>ひなぺんのお部屋</button>
     </section>
-    <button onClick={handleClick1}>ひなぺんの部屋へ飛ぶ</button>
     </div>
   );
 };
