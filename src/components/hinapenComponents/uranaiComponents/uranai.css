@@ -1,0 +1,22 @@
+.btn_18 {
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  position: relative;
+  width: 120px;
+  margin: auto;
+  padding: 1rem 4rem;
+  font-weight: bold;
+  border-radius: 10px;
+  color: #0e0c0c; /* モノクロカラー */
+  border: 3px solid #333; /* モノクロカラー */
+  box-shadow: 5px 5px #333; /* モノクロカラー */
+  transition: 0.3s ease-in-out;
+}
+
+.btn_18:hover {
+  box-shadow: none;
+  transform: translate(5px, 5px);
+  color: #333; /* モノクロカラー */
+}
