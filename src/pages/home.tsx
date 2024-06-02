@@ -25,15 +25,21 @@ export const Home = () => {
 
       <section id="table">
 		      <table border="1">
-            <tr>
-              <th><a href="" className="btn_01">日本語</a></th><th><a href="" className="btn_02">ぺ　ン　ンーーー</a></th>
-            </tr>
+          <tr>
+            <th>日本語</th><th>ぺ　ン　ンーーー</th>
+            {/* <th><a href="" className="btn_01">日本語</a></th><th><a href="" className="btn_02">ぺ　ン　ンーーー</a></th> */}
+          </tr>
           </table>
       </section>
 
       <div className="flex">
         <input className="inputBox" type="text"/>
         <input className="inputBox" type="text"/>
+      </div>
+      
+      <div className="fishbutton">
+      <p><input type="image" src="public/Unionfish.png" alt="変換する"/></p>
+      <p><input type="image" src="public/Unionfishbone.png" alt="変換する" /></p>
       </div>
       
     <div className="balloon">
@@ -46,10 +52,6 @@ export const Home = () => {
     </div>
     </div>
     </div>
-    
-    <section id="dr.pen">
-        
-      </section>
       
     <section id="button">
         <button onClick={handleClick1}>ひなぺんのお部屋</button>
