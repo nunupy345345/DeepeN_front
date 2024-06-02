@@ -13,9 +13,9 @@ export const Header = (props: HeaderColor) => {
         <div className="all">
             <Link link="/" text="ホームへ戻る" linkName=""/>
             <div className="header">
-                <Link link="/deepen" text="Deepen" linkName={headerColor1}/>
+                <Link link="/" text="Deepen" linkName={headerColor1}/>
                 <Link link="/hinapen" text="雛ペンのお部屋" linkName={headerColor2}/>
-                <Link link="/text" text="テキストの翻訳" linkName={headerColor3}/>
+                <Link link="/" text="テキストの翻訳" linkName={headerColor3}/>
             </div>
         </div>  
     );

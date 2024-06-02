@@ -2,6 +2,7 @@ import {NavLink} from "react-router-dom";
 import GetExample from '../components/getTest';
 import PostExample from '../components/postTest';
 import './home.css';
+import { Header } from "../components/hinapenComponents/headerComponents/header";
 
 export const Home = () => {
   //clickしたときにtrainのページにいくようにする
@@ -13,7 +14,7 @@ export const Home = () => {
     <div className="home">
       {/* <NavLink to="/instruction">説明</NavLink>
       <h1>ホーム</h1> */}
-
+{/* 
 <header className="header">
     <nav className="nav">
       <ul className="menu-group">
@@ -22,8 +23,8 @@ export const Home = () => {
         <li className="menu-item"><a href="">雛ペンのお部屋</a></li>
       </ul>
     </nav>
-</header>
-
+</header> */}
+      <Header headerColor2="selectingHeader"/>
       <section id="table">
 		      <table border="1">
           <tr>

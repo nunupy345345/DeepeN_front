@@ -49,8 +49,8 @@ export const Response = (props: Language) => {
     const [output, setOutput] = useState('');
     const [beforeNum, setBeforeNUM] = useState(0);
     const onClick1 = () => {
-        setOutput(input)
         setIsShown(true)
+        setOutput(input)
     };
     const onClick2 = () => {
         setBeforeNUM(number)
