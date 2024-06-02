@@ -1,3 +1,4 @@
+import React from "react";
 import {NavLink} from "react-router-dom";
 import GetExample from '../components/getTest';
 import PostExample from '../components/postTest';
@@ -11,7 +12,8 @@ export const Home = () => {
   }
   
   return (
-    <div className="home">
+    <div className="all">
+      <div className="home">
       {/* <NavLink to="/instruction">説明</NavLink>
       <h1>ホーム</h1> */}
 {/* 
@@ -27,10 +29,10 @@ export const Home = () => {
       <Header headerColor2="selectingHeader"/>
       <section id="table">
 		      <table border="1">
-          <tr>
-            <th>日本語</th><th>ぺ　ン　ンーーー</th>
-            {/* <th><a href="" className="btn_01">日本語</a></th><th><a href="" className="btn_02">ぺ　ン　ンーーー</a></th> */}
-          </tr>
+            <tr>
+              <th>日本語</th><th>ぺ　ン　ンーーー</th>
+              {/* <th><a href="" className="btn_01">日本語</a></th><th><a href="" className="btn_02">ぺ　ン　ンーーー</a></th> */}
+            </tr>
           </table>
       </section>
 
@@ -40,24 +42,24 @@ export const Home = () => {
       </div>
       
       <div className="fishbutton">
-      <p><input type="image" src="public/Unionfish.png" alt="変換する"/></p>
-      <p><input type="image" src="public/Unionfishbone.png" alt="変換する" /></p>
+        <p><input type="image" src="public/Unionfish.png" alt="変換する"/></p>
+        <p><input type="image" src="public/Unionfishbone.png" alt="変換する" /></p>
       </div>
       
-    <div className="balloon">
-    <div className="faceicon">
-      <img src="public/pen2.png" alt="Dr.penの写真"></img>
-    </div>
-    <div className="chatting">
-    <div className="says">
-      <p>ペンギンは長生き！<br/>種にもよるけど15～20年生きるよ！！</p>
-    </div>
-    </div>
-    </div>
-      
-    <section id="button">
+      <div className="balloon">
+        <div className="faceicon">
+          <img src="public/pen2.png" alt="Dr.penの写真"></img>
+        </div>
+        <div className="chatting">
+          <div className="says">
+            <p>ペンギンは長生き！<br/>種にもよるけど15～20年生きるよ！！</p>
+          </div>
+        </div>
+      </div> 
+      <section id="button">
         <button onClick={handleClick1}>ひなぺんのお部屋</button>
-    </section>
+      </section>
     </div>
+  </div>
   );
 };

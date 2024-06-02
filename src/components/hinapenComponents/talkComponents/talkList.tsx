@@ -1,3 +1,4 @@
+import React from 'react';
 import './talkContent.css'
 import { useState } from "react";
 import { dict } from '../../../../public/images/images';

@@ -1,3 +1,4 @@
+import React from 'react';
 import pen from './pen.png';
 import koalapen from './koalapen.png';
 import hideripen from './hideri-pen.png';

@@ -1,3 +1,4 @@
+import React from "react";
 import { Header } from "../../components/hinapenComponents/headerComponents/header";
 import { TalkContents } from "../../components/hinapenComponents/talkComponents/talkContent";
 import './talk.css'

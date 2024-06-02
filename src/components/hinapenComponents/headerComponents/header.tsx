@@ -1,3 +1,4 @@
+import React from "react";
 import { Link } from "./navlink";
 import './header.css'
 
@@ -11,7 +12,6 @@ export const Header = (props: HeaderColor) => {
     const {headerColor1="defaultHeader", headerColor2="defaultHeader", headerColor3="defaultHeader"} = props
     return (
         <div className="all">
-            <Link link="/" text="ホームへ戻る" linkName=""/>
             <div className="header">
                 <Link link="/" text="Deepen" linkName={headerColor1}/>
                 <Link link="/hinapen" text="雛ペンのお部屋" linkName={headerColor2}/>
