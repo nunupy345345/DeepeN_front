@@ -1,6 +1,3 @@
-import {NavLink} from "react-router-dom";
-import GetExample from '../components/getTest';
-import PostExample from '../components/postTest';
 import './home.css';
 import { Header } from "../components/hinapenComponents/headerComponents/header";
 
@@ -26,7 +23,7 @@ export const Home = () => {
 </header> */}
       <Header headerColor2="selectingHeader"/>
       <section id="table">
-		      <table border="1">
+		      <table border={1}>
           <tr>
             <th>日本語</th><th>ぺ　ン　ンーーー</th>
             {/* <th><a href="" className="btn_01">日本語</a></th><th><a href="" className="btn_02">ぺ　ン　ンーーー</a></th> */}

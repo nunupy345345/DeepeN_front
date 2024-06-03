@@ -2,7 +2,7 @@ import './App.css';
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 
 import { Pnf } from "./pages/pnf.tsx";
-import { Home } from "./pages/home.tsx";
+import { Home } from './pages/Home.tsx';
 import { Hinapen } from "./pages/hinapen/hinapen.tsx";
 import { Talk } from "./pages/hinapen/talk.tsx";
 import { Zukan } from "./pages/hinapen/zukan.tsx";
