@@ -1,5 +1,5 @@
 import './uranai.css';
-import React, { useState, FC, useEffect } from 'react';
+import { useState, FC} from 'react';
 import axios from "axios";
 
 interface DataProps {
