@@ -1,12 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
-import playIcon from './play-icon.svg';
-import stopIcon from './stop-icon.svg';
-import audioFile from 'public/bgm.mp3';
+import playIcon from '../../public/images/play.png';
+import stopIcon from '../../public/images/stop.png';
+import audioFile from '../../public/bgm.mp3';
 
 const AudioPlayer: React.FC = () => {
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
   const audioContext = useRef<AudioContext | null>(null);
   const audioSource = useRef<AudioBufferSourceNode | null>(null);
+  const audioBuffer = useRef<AudioBuffer | null>(null);
 
   useEffect(() => {
     const ctx = new (window.AudioContext || window.webkitAudioContext)();
@@ -21,11 +22,8 @@ const AudioPlayer: React.FC = () => {
     if (audioContext.current) {
       const response = await fetch(audioFile);
       const arrayBuffer = await response.arrayBuffer();
-      const audioBuffer = await audioContext.current.decodeAudioData(arrayBuffer);
-      const source = audioContext.current.createBufferSource();
-      source.buffer = audioBuffer;
-      source.connect(audioContext.current.destination);
-      audioSource.current = source;
+      const buffer = await audioContext.current.decodeAudioData(arrayBuffer);
+      audioBuffer.current = buffer;
     }
   };
 
@@ -34,11 +32,16 @@ const AudioPlayer: React.FC = () => {
   }, []);
 
   const handlePlayPause = () => {
-    if (audioSource.current) {
+    if (audioContext.current && audioBuffer.current) {
       if (isPlaying) {
-        audioSource.current.stop();
+        audioSource.current?.stop();
+        audioSource.current = null;
       } else {
-        audioSource.current.start();
+        const source = audioContext.current.createBufferSource();
+        source.buffer = audioBuffer.current;
+        source.connect(audioContext.current.destination);
+        source.start();
+        audioSource.current = source;
       }
       setIsPlaying(!isPlaying);
     }
