@@ -1,5 +1,6 @@
 import { Link } from "./navlink";
 import './header.css'
+import AudioPlayer from "../../bgmComponents";
 
 type HeaderColor = {
     headerColor1?: string;
@@ -16,6 +17,9 @@ export const Header = (props: HeaderColor) => {
                 <Link link="/" text="Deepen" linkName={headerColor1}/>
                 <Link link="/hinapen" text="雛ペンのお部屋" linkName={headerColor2}/>
                 <Link link="/" text="テキストの翻訳" linkName={headerColor3}/>
+                <div className="player">
+                    <AudioPlayer/>
+                </div>
             </div>
         </div>  
     );
