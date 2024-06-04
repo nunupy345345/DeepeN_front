@@ -21,7 +21,7 @@ export const Home = () => {
       </ul>
     </nav>
 </header> */}
-      <Header headerColor2="selectingHeader"/>
+      <Header headerColor1="selectingHeader"/>
       <section id="table">
 		      <table border={1}>
           <tr>
