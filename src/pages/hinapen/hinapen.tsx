@@ -1,6 +1,6 @@
-import React from 'react';
+// import React from 'react';
 import './hinapen.css';
-import hinapenroom from "../../../public/images/hinapenroom.jpg";
+import hinapen from "../../../public/images/hinapen.jpg";
 import { Header } from "../../components/hinapenComponents/headerComponents/header";
 import { Link } from "../../components/hinapenComponents/headerComponents/navlink";
 
@@ -14,7 +14,7 @@ export const Hinapen = () => {
       </div>
       <div className="disc_img">
         <p className="discription">学んだペン語の知識を元に雛ペンとお話ししてみよう！<br/>君の声がけ次第で雛ペンは様々な姿に変身するよ！</p>
-        <img src={hinapenroom} className="image" />
+        <img src={hinapen} className="image" />
       </div>
     </div>
   );

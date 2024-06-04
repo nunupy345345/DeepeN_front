@@ -11,6 +11,7 @@
     width: 35vw;
     height: 25vw;
     font-size: 5vw;
+    border-radius: 5vw;
 }
 
 .button {
@@ -24,12 +25,12 @@
 
 .outputBox {
     position: relative;
-    /* top: 50vw; */
-    left: 10vw;
+    left: 9vw;
     width: 35vw;
     height: 25vw;
     background-color: lightyellow;
     font-size: 5cqmax;
+    border-radius: 5vw;
 }
 
 .talkpen {
@@ -38,4 +39,22 @@
     left: -30vw;
     height: 18vw;
     width: 18vw;
+    border-radius: 2vw;
+}
+
+.changeLang {
+    position: absolute;
+    top: 35vw;
+    left: 87.5vw;
+    width: 7vw;
+    height: 4vw;
+}
+
+.usingLang {
+    position: absolute;
+    top: 27vw;
+    left: 87vw;
+    background-color: white;
+    padding: 1.3vw;
+    font-size: 2vw;
 }
