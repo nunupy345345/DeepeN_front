@@ -24,10 +24,8 @@
 
 .picture {
     object-fit: cover;
-    width: 9vw;
-    height: 9vw;
-    /* width: 18vw;
-    height: 18vw; */
+    width: 18vw;
+    height: 18vw;
     background-color: white;
     &:active{
         height: 40vw;

@@ -1,6 +1,6 @@
 // import React from 'react';
 import './hinapen.css';
-import hinapen from "../../../public/images/hinapen.jpg";
+import hinapen from "../../../../public/images/hinapen.jpg";
 import { Header } from "../../components/hinapenComponents/headerComponents/header";
 import { Link } from "../../components/hinapenComponents/headerComponents/navlink";
 

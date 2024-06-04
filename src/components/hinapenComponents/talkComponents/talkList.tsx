@@ -1,15 +1,19 @@
 import './talkContent.css'
 import { useState } from "react";
 import { dict } from '../../../../public/images/images';
-import hinapen from '../../../../public/images/hinapenroom.jpg'
+// import hinapen from '../../../../public/images/hinapen.jpg'
 
 const array: readonly string[][] = [
-    ["(ペン語)","(日本語)",dict[0]],
+    ["ぺン　ぺーぺ　ーぺぺン　ン　ーーンぺ　ぺぺぺン　ン　ーぺぺン　ーぺーン　ンンー　ぺーー　ーぺ　ンぺン　ぺぺぺ　ーンぺ　ーンーン　ぺーンン","最近、勉強捗ってる？",dict[0]],
     ["1","11",dict[1]],
     ["2","22",dict[2]],
-    ["3","33",dict[3]],
+    ["ーンンン　ぺぺぺ　ぺーぺぺ　ーーンー　ぺぺぺー　ーぺ　ーンー　ンぺぺー　ンーー　ーンー","やっぱりお金だよね",dict[3]],
     ["4","44",dict[4]],
     ["5","55",dict[5]],
+    ['6','66',dict[6]],
+    ['ぺ　ン　ぺぺンぺ　ン　ぺぺぺぺ　ぺンー　ぺーン　ぺンンー　ぺぺーぺ　ぺーー　ぺぺ　ーンーン　ぺーンン','ペンギンを見たことはある？',dict[7]],
+    ['ぺぺ　ンンンー　ぺンーン　ーンぺ　ぺぺーぺ　ぺぺン　ーンぺ　ーンーン','熱くて溶けてる',dict[8]],
+    ['9','99',dict[9]],
 ]
 
 
@@ -28,7 +32,8 @@ export const Response = () => {
         else {
             return <>
             <p className='outputBox'> 雛ぺんに話しかけてみよう！ </p>
-            <img src={hinapen} alt='hinapen' className='talkpen'/></>}
+            {/* <img src={hinapen} alt='hinapen' className='talkpen'/> */}
+            </>}
     }
     
 //　else　役割、画像の選択等　確認
