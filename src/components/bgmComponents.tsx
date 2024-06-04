@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
-import playIcon from '../../public/images/play.png';
-import stopIcon from '../../public/images/stop.png';
-import audioFile from '../../public/bgm.mp3';
+import playIcon from '/images/play.png';
+import stopIcon from '/images/stop.png';
+import audioFile from '/bgm.mp3';
+import './bgm.css';
 
 const AudioPlayer: React.FC = () => {
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
@@ -48,9 +49,7 @@ const AudioPlayer: React.FC = () => {
   };
 
   return (
-    <button onClick={handlePlayPause}>
-      <img src={isPlaying ? stopIcon : playIcon} alt={isPlaying ? 'Stop' : 'Play'} />
-    </button>
+      <img src={isPlaying ? stopIcon : playIcon} alt={isPlaying ? 'Stop' : 'Play'} onClick={handlePlayPause}/>
   );
 };
 

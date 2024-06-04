@@ -1,13 +1,20 @@
 .header{
     display: flex;
     background-color: dodgerblue;
-    grid-gap: 10vw;
-    width: max-content;
-    font-size: 4cqmax;
+    grid-gap: 3vw;
+    justify-content: space-between;
+    align-items: center;
+    width: 98.5%;
     color: black;
-    padding: 3vw;
+    padding: 3vw 1vw;
+    font-size: 4cqmax;
 }
 
+.links {
+    display: flex;
+    gap: 1vw;
+    margin-left: 1vw;
+}
 .defaultHeader {
     width: 30vw;
     color: black;
