@@ -1,7 +1,7 @@
 import './talkContent.css'
 import { useState } from "react";
 import { dict } from '../../../../public/images/images';
-// import hinapen from '../../../../public/images/hinapen.jpg'
+import hinapen from '../../../../public/images/hinapen.jpg'
 
 const array: readonly string[][] = [
     ["ぺン　ぺーぺ　ーぺぺン　ン　ーーンぺ　ぺぺぺン　ン　ーぺぺン　ーぺーン　ンンー　ぺーー　ーぺ　ンぺン　ぺぺぺ　ーンぺ　ーンーン　ぺーンン","最近、勉強捗ってる？",dict[0]],
@@ -32,8 +32,8 @@ export const Response = () => {
         else {
             return <>
             <p className='outputBox'> 雛ぺんに話しかけてみよう！ </p>
-            {/* <img src={hinapen} alt='hinapen' className='talkpen'/> */}
-            </>}
+            <img src={hinapen} alt='hinapen' className='talkpen'/>
+</>}
     }
     
 //　else　役割、画像の選択等　確認

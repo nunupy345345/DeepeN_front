@@ -5,32 +5,35 @@
 }
 
 .inputBox {
-    position: relative;
-    top: 5vw;
+    position: absolute;
+    top: 13vw;
     left: 5vw;
-    width: 35vw;
-    height: 25vw;
+    width: 29vw;
+    height: 19vw;
     font-size: 5vw;
     border-radius: 5vw;
+    padding: 3vw;
 }
 
 .button {
-    position: relative;
-    top: 26vw;
-    left: 5vw;
+    position: absolute;
+    top: 34vw;
+    left: 40.7vw;
     width: 7vw;
     height: 4vw;
     font-size: 1.5vw;
 }
 
 .outputBox {
-    position: relative;
-    left: 9vw;
-    width: 35vw;
-    height: 25vw;
+    position: absolute;
+    top: 8vw;
+    left: 51vw;
+    width: 29vw;
+    height: 19vw;
     background-color: lightyellow;
     font-size: 5cqmax;
     border-radius: 5vw;
+    padding: 3vw;
 }
 
 .talkpen {
