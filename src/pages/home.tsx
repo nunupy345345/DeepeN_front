@@ -99,12 +99,10 @@ export const Home = () => {
     </div>
       
     <section id="button">
-        <button onClick={handleClick1}>ひなぺんのお部屋</button>
+        {/* <button onClick={handleClick1}>ひなぺんのお部屋</button> */}
     </section>
     </div>
   );
 };
-
-// const url = import.meta.env.VITE_REACT_APP_BACK_URL/deepen;
 
 // const url = import.meta.env.VITE_REACT_APP_BACK_URL/deepen;
