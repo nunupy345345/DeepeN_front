@@ -2,6 +2,7 @@ import { Link } from "./navlink";
 import './header.css'
 import AudioPlayer from "../../bgmComponents";
 import axios from 'axios';
+import { useEffect } from "react";
 type HeaderColor = {
     headerColor1?: string;
     headerColor2?: string;
