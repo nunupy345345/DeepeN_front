@@ -1,4 +1,4 @@
-import { useState, FC} from 'react';
+import  { useState, FC } from 'react';
 import axios from "axios";
 
 const PostExample: FC = () => {
