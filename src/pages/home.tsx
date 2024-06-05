@@ -76,13 +76,15 @@ export const Home = () => {
 
     
 
-      <div className="flex">
+    
+
+      <div className="flex-box">
        <input className="inputBox" type="text" value={input} onChange={(e) => setInput(e.target.value)} onClick={() => setOutput("")}/>
        <input className="inputBox" type="text" value={output} onChange={(e) => setOutput(e.target.value)} onClick={() => setInput("")}/>
       </div>
       
       <div className="fishbutton">
-      <p><img src="public/pen2.png" alt="変換する"  onClick={onClick1}/></p>
+      <p><img src="public/fishbutton.png" alt="変換する"  onClick={onClick1}/></p>
       </div>
       
     <div className="balloon">
@@ -91,7 +93,7 @@ export const Home = () => {
     </div>
     <div className="chatting">
     <div className="says">
-      <p>ペンギンは長生き！<br/>種にもよるけど15～20年生きるよ！！</p>
+      <p>ぺ　ン　ぺぺンぺ　ン　ぺーー　ンンぺー　ぺーンー　ぺーぺ　ーぺぺン<br/>ーぺぺぺ　ーぺン　ンンぺ　ぺンぺ　ンーー　ーンーン　ぺぺン　ンぺン　ーぺンぺ　ンぺーぺ　ーぺ　ンンンン　ーー　ぺー　ーンー　ン　ぺーぺ　ーぺぺン　ーンーン　ンーー</p>
     </div>
     </div>
     </div>
@@ -102,5 +104,7 @@ export const Home = () => {
     </div>
   );
 };
+
+// const url = import.meta.env.VITE_REACT_APP_BACK_URL/deepen;
 
 // const url = import.meta.env.VITE_REACT_APP_BACK_URL/deepen;
