@@ -37,7 +37,19 @@ ul {
   list-style: none;
 }
 
+.PandJ{
+  display: flex;
+  text-align: center;
+  position: relative;
+}
+.box {
+  font-size: 3vw;
+  border: solid 2px rgb(4, 0, 255);
+  padding: 1em;
+  width: 35vw;
+  margin: auto;
 
+}
 table {
   position: relative;
   bottom:20px;
@@ -56,32 +68,69 @@ th {
   border: solid 2px rgb(4, 0, 255);
 }
 
-.flex-box{
-  display: flex;
-  padding: 0;
-  margin: 0;
-  height: auto;
+div .translation-container {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 15vh;  */
 }
 
-div .inputBox {
-  /* position: relative; */
-  margin: 0;
-  /* bottom: 100px; */
-  width: 48vw;
-  height: 70vh;
-  font-size: 2vw;
+.inputBox {
+  padding: 0px;
+  font-size: 16px; /* フォントサイズを設定 */
   border: solid 2px rgb(4, 0, 255);
 }
+.r {
+  display: flex;
+  text-align: center;
+}
+.hoge {
+  padding: 0px;
+  width: 50%;
+  height: 30vh;
+  font-size: 3vw; /* フォントサイズを設定 */
+  border: solid 2px rgb(4, 0, 255);
+}
+/* div .inputBox {
+  position: relative;
+  margin: 0;
+  bottom: 100px;
+  width: 45vw;
+  height: 70vh;
+  font-size: 5vw;
+  border: solid 2px rgb(4, 0, 255);
+} */
 
 .fishbutton{
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  text-align: center;
-  transform: translate(-50%, -50%);
+  /* position: absolute; */
+  /* margin: 0% 43vw;
+  top: 19%; */
+  /* left: 45%;
+  /* width: 10vw;
+  height: auto;  */
+  /* position: absolute; */
+  /* top: 25%; */
+  /* display: flex; */
+  /* text-align: center; */
+  margin: auto;
+  /* transform: translate(-50%, -50%); */
 }
-
+.fishbutton img {
+  width :10vw;
+  height:auto;
+}
+.hoge input{
+  margin: 0;
+	padding: 0;
+	background: none;
+	border: none;
+	border-radius: 0;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
 .balloon {
   width: 95%;
   margin: 1.5em 0;
@@ -94,6 +143,7 @@ div .inputBox {
 }
 .balloon .faceicon img{
   width: 100%;
+  border-radius:50%;
   height: auto;
 }
 .balloon .chatting {
@@ -105,7 +155,7 @@ div .inputBox {
   top:25px;
   margin: 5px 0 0 105px;
   padding: 17px 13px;
-  border-radius: 12px;
+  border-radius: 2vw;
   background: #d7ebfe;
   font-size: 2vw;
   width: 80%;
@@ -114,10 +164,10 @@ div .inputBox {
   content: "";
   display: inline-block;
   position: absolute;
-  top: 54px; 
-  left: -24px;
-  border: 12px solid transparent;
-  border-right: 12px solid #d7ebfe;
+  top: 5vw; 
+  left: -3.5vw;
+  border: 2vw solid transparent;
+  border-right: 2vw solid #d7ebfe;
 }
 .says p {
   margin: 0;

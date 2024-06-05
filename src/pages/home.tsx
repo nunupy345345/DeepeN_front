@@ -51,50 +51,53 @@ export const Home = () => {
 
   return (
     <div className="home">
-      {/* <NavLink to="/instruction">説明</NavLink>
-      <h1>ホーム</h1> */}
-{/* 
-<header className="header">
-    <nav className="nav">
-      <ul className="menu-group">
-        <li className="menu-item"><a href="">DeepeN</a></li>
-        <li className="menu-item"><a href="">テキストの翻訳</a></li>
-        <li className="menu-item"><a href="">雛ペンのお部屋</a></li>
-      </ul>
-    </nav>
-</header> */}
       <Header headerColor2="selectingHeader" />
       
-      <section id="table">
+      {/* <section id="table">
 		      <table border={1}>
           <tr>
             <th>日本語</th><th>ぺ　ン　ンーーー</th>
-            {/* <th><a href="" className="btn_01">日本語</a></th><th><a href="" className="btn_02">ぺ　ン　ンーーー</a></th> */}
           </tr>
           </table>
-      </section>
+      </section> */}
+      <div className='PandJ'>
+        <p className='box'>日本語</p>
+          <div className="fishbutton">
+            <img src="public/fishbutton.png" alt="変換する"  onClick={onClick1}/>
+          </div>
+        <p className='box'>ぺ　ン　ンーーー</p>
+      </div>
 
     
 
     
-
-      <div className="flex-box">
+{/* 
+      <div className="translation-container">
        <input className="inputBox" type="text" value={input} onChange={(e) => setInput(e.target.value)} onClick={() => setOutput("")}/>
        <input className="inputBox" type="text" value={output} onChange={(e) => setOutput(e.target.value)} onClick={() => setInput("")}/>
+      </div> */}
+
+      <div className="r">
+       <input className="hoge" type="text" value={input} onChange={(e) => setInput(e.target.value)} onClick={() => setOutput("")}/>
+       <input className="hoge" type="text" value={output} onChange={(e) => setOutput(e.target.value)} onClick={() => setInput("")}/>
       </div>
+
+      {/* <div className="hoge">
+       <input className="inputBox" type="text" value={input} onChange={(e) => setInput(e.target.value)} onClick={() => setOutput("")}/>
+       <input className="inputBox" type="text" value={output} onChange={(e) => setOutput(e.target.value)} onClick={() => setInput("")}/>
+      </div> */}
+
+
       
-      <div className="fishbutton">
-      <p><img src="public/fishbutton.png" alt="変換する"  onClick={onClick1}/></p>
-      </div>
       
     <div className="balloon">
     <div className="faceicon">
       <img src="public/pen2.png" alt="Dr.penの写真"></img>
     </div>
     <div className="chatting">
-    <div className="says">
-      <p>ぺ　ン　ぺぺンぺ　ン　ぺーー　ンンぺー　ぺーンー　ぺーぺ　ーぺぺン<br/>ーぺぺぺ　ーぺン　ンンぺ　ぺンぺ　ンーー　ーンーン　ぺぺン　ンぺン　ーぺンぺ　ンぺーぺ　ーぺ　ンンンン　ーー　ぺー　ーンー　ン　ぺーぺ　ーぺぺン　ーンーン　ンーー</p>
-    </div>
+      <div className="says">
+        <p>ぺ　ン　ぺぺンぺ　ン　ぺーー　ンンぺー　ぺーンー　ぺーぺ　ーぺぺン<br/>ーぺぺぺ　ーぺン　ンンぺ　ぺンぺ　ンーー　ーンーン　ぺぺン　ンぺン　ーぺンぺ　ンぺーぺ　ーぺ　ンンンン　ーー　ぺー　ーンー　ン　ぺーぺ　ーぺぺン　ーンーン　ンーー</p>
+      </div>
     </div>
     </div>
       
