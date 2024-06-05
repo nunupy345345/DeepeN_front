@@ -1,6 +1,3 @@
-import {NavLink} from "react-router-dom";
-import GetExample from '../components/getTest';
-import PostExample from '../components/postTest';
 import './home.css';
 import { Header } from "../components/hinapenComponents/headerComponents/header";
 import { useState } from "react";
