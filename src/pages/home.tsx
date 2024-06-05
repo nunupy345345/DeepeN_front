@@ -1,25 +1,7 @@
 import './home.css';
 import { Header } from "../components/hinapenComponents/headerComponents/header";
-import { useEffect, useState } from 'react';
-import axios from 'axios';
 
 export const Home = () => {
-  const [data, setData] = useState('');
-  const url = import.meta.env.VITE_REACT_APP_BACK_URL;
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        axios.get(url).then(res => {
-          const response = res.data.message;
-          console.log(response);
-          setData(response);
-        })
-      } catch (error) {
-        console.error(error);
-      };
-    };
-    fetchData();
-  },[url]);
   //clickしたときにtrainのページにいくようにする
   const handleClick1 = () => {
     window.location.href = "/hinapen";
