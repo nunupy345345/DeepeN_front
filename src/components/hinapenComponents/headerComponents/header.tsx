@@ -11,7 +11,6 @@ type HeaderColor = {
 
 export const Header = (props: HeaderColor) => {
     const {headerColor1="defaultHeader", headerColor2="defaultHeader", headerColor3="defaultHeader"} = props
-    const [data, setData] = useState('');
   const url = import.meta.env.VITE_REACT_APP_BACK_URL;
   useEffect(() => {
     const fetchData = async () => {
@@ -19,7 +18,6 @@ export const Header = (props: HeaderColor) => {
         axios.get(url).then(res => {
           const response = res.data.message;
           console.log(response);
-          setData(response);
         })
       } catch (error) {
         console.error(error);
