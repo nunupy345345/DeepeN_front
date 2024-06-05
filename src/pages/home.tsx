@@ -50,7 +50,8 @@ export const Home = () => {
     
 
   return (
-    <div className="home">
+    <div className="all">
+      <div className="home">
       {/* <NavLink to="/instruction">説明</NavLink>
       <h1>ホーム</h1> */}
 {/* 
@@ -63,14 +64,13 @@ export const Home = () => {
       </ul>
     </nav>
 </header> */}
-      <Header headerColor2="selectingHeader" />
-      
+      <Header headerColor1="selectingHeader"/>
       <section id="table">
 		      <table border={1}>
-          <tr>
-            <th>日本語</th><th>ぺ　ン　ンーーー</th>
-            {/* <th><a href="" className="btn_01">日本語</a></th><th><a href="" className="btn_02">ぺ　ン　ンーーー</a></th> */}
-          </tr>
+            <tr>
+              <th>日本語</th><th>ぺ　ン　ンーーー</th>
+              {/* <th><a href="" className="btn_01">日本語</a></th><th><a href="" className="btn_02">ぺ　ン　ンーーー</a></th> */}
+            </tr>
           </table>
       </section>
 
@@ -85,21 +85,21 @@ export const Home = () => {
       <p><img src="public/pen2.png" alt="変換する"  onClick={onClick1}/></p>
       </div>
       
-    <div className="balloon">
-    <div className="faceicon">
-      <img src="public/pen2.png" alt="Dr.penの写真"></img>
-    </div>
-    <div className="chatting">
-    <div className="says">
-      <p>ペンギンは長生き！<br/>種にもよるけど15～20年生きるよ！！</p>
-    </div>
-    </div>
-    </div>
-      
-    <section id="button">
+      <div className="balloon">
+        <div className="faceicon">
+          <img src="public/pen2.png" alt="Dr.penの写真"></img>
+        </div>
+        <div className="chatting">
+          <div className="says">
+            <p>ペンギンは長生き！<br/>種にもよるけど15～20年生きるよ！！</p>
+          </div>
+        </div>
+      </div> 
+      <section id="button">
         <button onClick={handleClick1}>ひなぺんのお部屋</button>
-    </section>
+      </section>
     </div>
+  </div>
   );
 };
 
