@@ -5,15 +5,15 @@ import hinapen from '../../../../public/images/hinapen.jpg'
 
 const array: readonly string[][] = [
     ["ぺン　ぺーぺ　ーぺぺン　ン　ーーンぺ　ぺぺぺン　ン　ーぺぺン　ーぺーン　ンンー　ぺーー　ーぺ　ンぺン　ぺぺぺ　ーンぺ　ーンーン　ぺーンン","最近、勉強捗ってる？",dict[0]],
-    ["1","11",dict[1]],
-    ["2","22",dict[2]],
+    // ['','',dict[1]],
+    // ['','',dict[2]],
     ["ーンンン　ぺぺぺ　ぺーぺぺ　ーーンー　ぺぺぺー　ーぺ　ーンー　ンぺぺー　ンーー　ーンー","やっぱりお金だよね",dict[3]],
-    ["4","44",dict[4]],
-    ["5","55",dict[5]],
-    ['6','66',dict[6]],
+    // ['','',dict[4]],
+    // ["","",dict[5]],
+    // ['','',dict[6]],
     ['ぺ　ン　ぺぺンぺ　ン　ぺぺぺぺ　ぺンー　ぺーン　ぺンンー　ぺぺーぺ　ぺーー　ぺぺ　ーンーン　ぺーンン','ペンギンを見たことはある？',dict[7]],
     ['ぺぺ　ンンンー　ぺンーン　ーンぺ　ぺぺーぺ　ぺぺン　ーンぺ　ーンーン','熱くて溶けてる',dict[8]],
-    ['9','99',dict[9]],
+    // ['','',dict[9]],
 ]
 
 
@@ -25,6 +25,11 @@ export const Response = () => {
             return <>
             <p className='outputBox'>{array[number][lang]}</p>
             <img src={dict[number]} alt="talkpen" className='talkpen'/></>}
+        else if (translate == true){
+            setTranslate(false)
+            return <>
+            <p className='outputBox'>{array[beforeNum][lang]}</p>
+            <img src={dict[beforeNum]} alt="talkpen" className='talkpen'/></>}
         else if (Input != "" && isShown == false){
             return <>
             <p className='outputBox'/>
@@ -32,8 +37,7 @@ export const Response = () => {
         else {
             return <>
             <p className='outputBox'> 雛ぺんに話しかけてみよう！ </p>
-            <img src={hinapen} alt='hinapen' className='talkpen'/>
-</>}
+            <img src={hinapen} alt='hinapen' className='talkpen'/></>}
     }
     
 //　else　役割、画像の選択等　確認
@@ -42,12 +46,14 @@ export const Response = () => {
 // 返事、中央寄せ
 // 文字サイズ　言語によって変えたほうが良い？
 // 返事をそのまま言語を切り替える
+// ファイルを分割する
 
     const [isShown,setIsShown] = useState(false);
     const [input, setInput] = useState('');
     const [output, setOutput] = useState('');
     const [beforeNum, setBeforeNUM] = useState(0);
     const [lang, setLang] = useState(0);
+    const [translate, setTranslate] = useState(false);
 
     const onClick1 = () => {
         setIsShown(true)
@@ -68,6 +74,7 @@ export const Response = () => {
     }
 
     const changeLang = (now:number) => {
+        setTranslate(true)
         if (now == 0){
             setLang(1);
             setIsShown(false);
