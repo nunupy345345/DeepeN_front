@@ -48,33 +48,39 @@ table {
 }
 th {
   position: relative;
-  width: 48.95vw;
-  height: 8vw;
+  width: 48vw;
+  height: 20vh;
   font-size: 2vw;
   border: solid 1px;  /* 枠線指定 */
   /* padding: 10px;      余白指定  */
   border: solid 2px rgb(4, 0, 255);
 }
 
-.flex{
+.flex-box{
   display: flex;
+  padding: 0;
+  margin: 0;
+  height: auto;
 }
-.inputBox {
-  position: relative;
-  bottom:20px;
-  width: 48.7vw;
-  height: 25vw;
+
+div .inputBox {
+  /* position: relative; */
+  margin: 0;
+  /* bottom: 100px; */
+  width: 48vw;
+  height: 70vh;
   font-size: 2vw;
   border: solid 2px rgb(4, 0, 255);
 }
+
 .fishbutton{
-  position:absolute;
-  bottom: 332px;
-  left: 545px;
+  position:relative;
+  bottom: 540px;
+  left: 535px;
 }
 
 .balloon {
-  width: 100%;
+  width: 95%;
   margin: 1.5em 0;
   overflow: hidden;
 }
