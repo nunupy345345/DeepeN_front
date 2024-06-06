@@ -5,59 +5,80 @@
 }
 
 .inputBox {
-    position: absolute;
-    top: 13vw;
+    position: relative;
+    top: 3vw;
     left: 5vw;
-    width: 29vw;
-    height: 19vw;
-    font-size: 5vw;
+    width: 31vw;
+    height: 21vw;
+    font-size: 3cqmax;
     border-radius: 5vw;
-    padding: 3vw;
+    padding: 2vw;
 }
 
 .button {
-    position: absolute;
-    top: 34vw;
-    left: 40.7vw;
+    position: relative;
+    top: 24vw;
+    left: 5.3vw;
     width: 7vw;
     height: 4vw;
     font-size: 1.5vw;
 }
 
-.outputBox {
-    position: absolute;
-    top: 8vw;
-    left: 51vw;
-    width: 29vw;
-    height: 19vw;
+.pen {
+    position: relative;
+    top: 1vw;
+    left: 10vw;
+    width: 31vw;
+    height: 21vw;
     background-color: lightyellow;
-    font-size: 5cqmax;
+    font-size: 2cqmax;
     border-radius: 5vw;
-    padding: 3vw;
+    padding: 2vw;
+}
+
+.jpn {
+    position: relative;
+    top: 0;
+    left: 10vw;
+    width: 31vw;
+    height: 21vw;
+    background-color: lightyellow;
+    font-size: 3cqmax;
+    border-radius: 5vw;
+    padding: 2vw;
 }
 
 .talkpen {
     position: relative;
-    top: 31vw;
-    left: -30vw;
+    top: 29vw;
+    left: -27vw;
     height: 18vw;
     width: 18vw;
     border-radius: 2vw;
 }
 
 .changeLang {
-    position: absolute;
-    top: 35vw;
-    left: 87.5vw;
+    position: relative;
+    top: 24vw;
+    left: -23vw;
     width: 7vw;
     height: 4vw;
+    font-size: 1.5cqmax;
 }
 
 .usingLang {
-    position: absolute;
-    top: 27vw;
-    left: 87vw;
+    position: relative;
+    top: 16vw;
+    left: -15vw;
+    width: 6.5vw;
+    height: 2.8vw;
     background-color: white;
     padding: 1.3vw;
-    font-size: 2vw;
+    font-size: 2.1cqmax;
+}
+
+.here {
+    position: relative;
+    top: 27vw;
+    left: -85vw;
 }

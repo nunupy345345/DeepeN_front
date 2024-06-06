@@ -1,4 +1,3 @@
-import React from "react";
 import { ZukanContents } from "../../components/hinapenComponents/zukanComponents/zukanContents";
 import { Header } from "../../components/hinapenComponents/headerComponents/header";
 
