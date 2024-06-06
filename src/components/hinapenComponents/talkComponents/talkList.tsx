@@ -17,10 +17,10 @@ const array: readonly string[][] = [
     // ['9','99',dict[9]],
 ]
 
+var before: number; // Response内でbeforeを定義するとエラーが起きるのはなぜ？
 
 // 変更すべき点
 // ・吹き出しの形にする
-// ・返事をそのまま言語を切り替える
 
 export const Response = () => {
     let number: number = Math.floor(Math.random()*array.length);
@@ -31,7 +31,6 @@ export const Response = () => {
     const [beforeNUM, setBeforeNUM] = useState(0);
     const [lang, setLang] = useState(0);    // 0→ペン語　1→日本語
     const [translate, setTranslate] = useState(false);
-    // const [a, setA] = useState(true);
 
     const enter = () => {
         setIsShown(true)
@@ -40,7 +39,7 @@ export const Response = () => {
     };
     const reset = () => {
         setIsShown(false)
-        setBeforeNUM(number)
+        setBeforeNUM(before)
         setTranslate(false)
     };
 
@@ -51,7 +50,7 @@ export const Response = () => {
 
     const changeLang = (now:number) => {
         setTranslate(true);
-        setBeforeNUM(number)
+        setBeforeNUM(before)
         if (now == 0){ setLang(1) }
         else { setLang(0) }
     }
@@ -59,11 +58,11 @@ export const Response = () => {
     const showPhrase=(Input:string, beforeNum:number)=>{
         if (Input != ""){
             if (isShown == true && translate == false){
-                beforeNum = number;
+                before = number;
                 return <>
                 <p className={language[lang]}>{array[number][lang]}</p>
                 <img src={array[number][2]} alt="talkpen" className='talkpen'/>
-                <p className='here'>　　　　　　</p></>
+                <p className='here'>　　　　　　</p></> // 条件分岐で出力するタグの数を揃えるため
             }
             else if (isShown==true && translate==true){
                 return <>
