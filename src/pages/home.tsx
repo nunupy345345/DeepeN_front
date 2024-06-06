@@ -58,6 +58,7 @@ export const Home = () => {
           <tr>
             <th>日本語</th><th>ぺ　ン　ンーーー</th>
           </tr>
+
           </table>
       </section> */}
       <div className='PandJ'>
@@ -88,8 +89,7 @@ export const Home = () => {
       </div> */}
 
 
-      
-      
+
     <div className="balloon">
     <div className="faceicon">
       <img src="public/pen2.png" alt="Dr.penの写真"></img>
@@ -104,7 +104,9 @@ export const Home = () => {
     <section id="button">
         {/* <button onClick={handleClick1}>ひなぺんのお部屋</button> */}
     </section>
+
     </div>
+  </div>
   );
 };
 

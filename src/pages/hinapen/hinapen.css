@@ -35,7 +35,7 @@
   border-radius: 8vw;
 }
 
-.discription::before {
+.discription:before {
   content: "";
   position: absolute;
   top: 17vw;
