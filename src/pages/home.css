@@ -42,14 +42,38 @@ ul {
   text-align: center;
   position: relative;
 }
-.box {
+/* .box {
   font-size: 3vw;
   border: solid 2px rgb(4, 0, 255);
   padding: 1em;
   width: 35vw;
   margin: auto;
 
+} */
+.box {
+  position: relative;
+  display: inline-block;
+  margin: 2vw 3vw;
+  padding: 0.5em;
+  width: 25vw;
+  /* height: 2vw; */
+  color: #555;
+  font-size: 3vw;
+  background: #d7ebfe;
+  border-radius: 15px;
+  font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
 }
+
+.box:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: 2vw;
+  border: 2vw solid transparent;
+  border-top: 2vw solid #d7ebfe;
+}
+
 table {
   position: relative;
   bottom:20px;
