@@ -5,9 +5,6 @@ import axios from "axios";
 
 export const Home = () => {
   //clickしたときにtrainのページにいくようにする
-  const handleClick1 = () => {
-    window.location.href = "/hinapen";
-  }
     const [input, setInput] = useState('');
     const [output, setOutput] = useState('');
 
