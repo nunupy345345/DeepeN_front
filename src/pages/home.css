@@ -37,6 +37,42 @@ ul {
   list-style: none;
 }
 
+.PandJ{
+  display: flex;
+  text-align: center;
+  position: relative;
+}
+/* .box {
+  font-size: 3vw;
+  border: solid 2px rgb(4, 0, 255);
+  padding: 1em;
+  width: 35vw;
+  margin: auto;
+
+} */
+.box {
+  position: relative;
+  display: inline-block;
+  margin: 2vw 3vw;
+  padding: 0.5em;
+  width: 25vw;
+  /* height: 2vw; */
+  color: #555;
+  font-size: 3vw;
+  background: #d7ebfe;
+  border-radius: 15px;
+  font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+}
+
+.box:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: 2vw;
+  border: 2vw solid transparent;
+  border-top: 2vw solid #d7ebfe;
+}
 
 table {
   position: relative;
@@ -48,33 +84,79 @@ table {
 }
 th {
   position: relative;
-  width: 48.95vw;
-  height: 8vw;
+  width: 48vw;
+  height: 20vh;
   font-size: 2vw;
   border: solid 1px;  /* 枠線指定 */
   /* padding: 10px;      余白指定  */
   border: solid 2px rgb(4, 0, 255);
 }
 
-.flex{
-  display: flex;
-}
-.inputBox {
+div .translation-container {
   position: relative;
-  bottom:20px;
-  width: 48.7vw;
-  height: 25vw;
-  font-size: 2vw;
-  border: solid 2px rgb(4, 0, 255);
-}
-.fishbutton{
-  position:absolute;
-  bottom: 332px;
-  left: 545px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 15vh;  */
 }
 
+.inputBox {
+  padding: 0px;
+  font-size: 16px; /* フォントサイズを設定 */
+  border: solid 2px rgb(4, 0, 255);
+}
+.r {
+  display: flex;
+  text-align: center;
+}
+.hoge {
+  padding: 0px;
+  width: 50%;
+  height: 30vh;
+  font-size: 3vw; /* フォントサイズを設定 */
+  border: solid 2px rgb(4, 0, 255);
+}
+/* div .inputBox {
+  position: relative;
+  margin: 0;
+  bottom: 100px;
+  width: 45vw;
+  height: 70vh;
+  font-size: 5vw;
+  border: solid 2px rgb(4, 0, 255);
+} */
+
+.fishbutton{
+  /* position: absolute; */
+  /* margin: 0% 43vw;
+  top: 19%; */
+  /* left: 45%;
+  /* width: 10vw;
+  height: auto;  */
+  /* position: absolute; */
+  /* top: 25%; */
+  /* display: flex; */
+  /* text-align: center; */
+  margin: auto;
+  /* transform: translate(-50%, -50%); */
+}
+.fishbutton img {
+  width :10vw;
+  height:auto;
+}
+.hoge input{
+  margin: 0;
+	padding: 0;
+	background: none;
+	border: none;
+	border-radius: 0;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
 .balloon {
-  width: 100%;
+  width: 95%;
   margin: 1.5em 0;
   overflow: hidden;
 }
@@ -85,6 +167,7 @@ th {
 }
 .balloon .faceicon img{
   width: 100%;
+  border-radius:50%;
   height: auto;
 }
 .balloon .chatting {
@@ -96,7 +179,7 @@ th {
   top:25px;
   margin: 5px 0 0 105px;
   padding: 17px 13px;
-  border-radius: 12px;
+  border-radius: 2vw;
   background: #d7ebfe;
   font-size: 2vw;
   width: 80%;
@@ -105,10 +188,10 @@ th {
   content: "";
   display: inline-block;
   position: absolute;
-  top: 54px; 
-  left: -24px;
-  border: 12px solid transparent;
-  border-right: 12px solid #d7ebfe;
+  top: 5vw; 
+  left: -3.5vw;
+  border: 2vw solid transparent;
+  border-right: 2vw solid #d7ebfe;
 }
 .says p {
   margin: 0;
