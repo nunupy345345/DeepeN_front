@@ -1,15 +1,25 @@
 import './home.css';
 import { Header } from "../components/hinapenComponents/headerComponents/header";
-import { useState } from "react";
+import { useState,useRef } from "react";
 import axios from "axios";
 import fishbottun from '../../public/fishbutton.png'
 import hinapen from '../../public/pen2.png'
+import { useCopyClipboard } from "../components/copyComponents";
+import copy from '../../public/images/copy.png';
 
 export const Home = () => {
   //clickしたときにtrainのページにいくようにする
     const [input, setInput] = useState('');
     const [output, setOutput] = useState('');
+    const inputRef = useRef<HTMLInputElement>(null);
+    const useCopy= useCopyClipboard();
 
+    const penCopyClipboard = () => {
+      if (!inputRef.current) {
+        return;
+      }
+      useCopy.onCopy(inputRef.current.value);
+    };
   
     const onClick1 = async () => {
       // setJIsShown(true)
@@ -59,10 +69,10 @@ export const Home = () => {
           </div>
         <p className='box'>ぺ　ン　ンーーー</p>
       </div>
-
+      <img className='copy' src={copy} onClick={penCopyClipboard}></img>
       <div className="r">
        <input className="hoge" type="text" value={input} onChange={(e) => setInput(e.target.value)} onClick={() => setOutput("")}/>
-       <input className="hoge" type="text" value={output} onChange={(e) => setOutput(e.target.value)} onClick={() => setInput("")}/>
+       <input className="hoge" type="text" ref={inputRef} value={output} onChange={(e) => setOutput(e.target.value)} onClick={() => setInput("")}/>
       </div>
 
     <div className="balloon">
