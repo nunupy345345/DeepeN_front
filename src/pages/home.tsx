@@ -50,14 +50,6 @@ export const Home = () => {
     <div className="home">
       <Header headerColor2="selectingHeader" />
       
-      {/* <section id="table">
-		      <table border={1}>
-          <tr>
-            <th>日本語</th><th>ぺ　ン　ンーーー</th>
-          </tr>
-
-          </table>
-      </section> */}
       <div className='PandJ'>
         <p className='box'>日本語</p>
           <div className="fishbutton">
@@ -66,26 +58,10 @@ export const Home = () => {
         <p className='box'>ぺ　ン　ンーーー</p>
       </div>
 
-    
-
-    
-{/* 
-      <div className="translation-container">
-       <input className="inputBox" type="text" value={input} onChange={(e) => setInput(e.target.value)} onClick={() => setOutput("")}/>
-       <input className="inputBox" type="text" value={output} onChange={(e) => setOutput(e.target.value)} onClick={() => setInput("")}/>
-      </div> */}
-
       <div className="r">
        <input className="hoge" type="text" value={input} onChange={(e) => setInput(e.target.value)} onClick={() => setOutput("")}/>
        <input className="hoge" type="text" value={output} onChange={(e) => setOutput(e.target.value)} onClick={() => setInput("")}/>
       </div>
-
-      {/* <div className="hoge">
-       <input className="inputBox" type="text" value={input} onChange={(e) => setInput(e.target.value)} onClick={() => setOutput("")}/>
-       <input className="inputBox" type="text" value={output} onChange={(e) => setOutput(e.target.value)} onClick={() => setInput("")}/>
-      </div> */}
-
-
 
     <div className="balloon">
     <div className="faceicon">
@@ -97,14 +73,8 @@ export const Home = () => {
       </div>
     </div>
     </div>
-      
-    <section id="button">
-        {/* <button onClick={handleClick1}>ひなぺんのお部屋</button> */}
-    </section>
 
     </div>
  
   );
 };
-
-// const url = import.meta.env.VITE_REACT_APP_BACK_URL/deepen;
