@@ -2,6 +2,8 @@ import './home.css';
 import { Header } from "../components/hinapenComponents/headerComponents/header";
 import { useState } from "react";
 import axios from "axios";
+import fishbottun from '../../public/fishbutton.png'
+import hinapen from '../../public/pen2.png'
 
 export const Home = () => {
   //clickしたときにtrainのページにいくようにする
@@ -53,7 +55,7 @@ export const Home = () => {
       <div className='PandJ'>
         <p className='box'>日本語</p>
           <div className="fishbutton">
-            <img src="public/fishbutton.png" alt="変換する"  onClick={onClick1}/>
+            <img src={fishbottun} alt="変換する"  onClick={onClick1}/>
           </div>
         <p className='box'>ぺ　ン　ンーーー</p>
       </div>
@@ -65,7 +67,7 @@ export const Home = () => {
 
     <div className="balloon">
     <div className="faceicon">
-      <img src="public/pen2.png" alt="Dr.penの写真"></img>
+      <img src={hinapen} alt="Dr.penの写真"></img>
     </div>
     <div className="chatting">
       <div className="says">
