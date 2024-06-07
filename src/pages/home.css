@@ -116,6 +116,22 @@ div .translation-container {
   font-size: 3vw; /* フォントサイズを設定 */
   border: solid 2px rgb(4, 0, 255);
 }
+.copy {
+  background-color: #fff;
+  position: absolute;
+  margin: 0.1vw 0.1vw;
+  left: 50%;
+  box-shadow   : 6px 6px 3px #666666;  /* 影の設定 */
+  opacity      : 0.8;                  /* 透明度 */
+  cursor       : pointer;              /* カーソル形状 */
+  transition   : .3s;                  /* なめらか変化 */
+  width: 2vw;
+  height: auto;
+}
+.copy:hover {
+  box-shadow   : none;                 /* 影の設定 */
+  opacity      : 1;                    /* 透明度 */
+}
 /* div .inputBox {
   position: relative;
   margin: 0;
@@ -143,6 +159,7 @@ div .translation-container {
 .fishbutton img {
   width :10vw;
   height:auto;
+  background-color: #fff;
 }
 .hoge input{
   margin: 0;
